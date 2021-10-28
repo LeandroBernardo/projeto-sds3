@@ -1,12 +1,18 @@
+import NavBar from "components/NavBar";
+import Footer from "components/Footer";
+import DataTable from "components/DataTable";
 
-function App() {
+
+const App = () => {
   return (
-    <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-light border-bottom shadow-sm">
-      <div className="container">
-        <nav className="my-2 my-md-0 mr-md-3">
-        </nav>
+    <>
+      <NavBar />
+      <div className='container'>
+        <h1 className="text-primary">Hello World</h1>
+        <DataTable />
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
 
